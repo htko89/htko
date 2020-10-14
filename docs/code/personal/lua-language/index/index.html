@@ -1,0 +1,456 @@
+<!--
+                         MMMMMMM
+                    MMMMMMM   MMMMMMM
+                MMMMMMM           MMMMMMM
+            MMMMMMM                   MMMMMMM
+        MMMMMMM                           MMMMMMM
+    MMMMMMM                                   MMMMMMM
+MMMMMMM            MMMMMMMMMMMMMMMMMMM            MMMMMMM
+MMM                MMMMMMMMMMMMMMMMMMM                MMM
+MMM                        MMM                        MMM
+MMM                        MMM                        MMM
+MMM                        MMM                        MMM
+MMM                        MMM                        MMM
+MMM                                                   MMM
+MMM                 MMMMMMMMMMMMMMMMMM                MMM
+MMM                    MMMMMMMMMMMMMMM                MMM
+MMM                       MMMMM                       MMM
+MMM                     MMMM MMMMM                    MMM
+MMM                  MMMM       MMMMM                 MMM
+MMMMMMM            MMMM            MMM            MMMMMMM
+    MMMMMMM                                   MMMMMMM
+        MMMMMMM                           MMMMMMM
+            MMMMMMM                   MMMMMMM
+                MMMMMMM           MMMMMMM
+                    MMMMMMM   MMMMMMM
+                         MMMMMMM
+
+Hello there! Thank you for showing interest in my source code.
+
+To learn more visit:
+https://www.tko.dev/about.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- init -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  <title> Tony Ko | LUA Language </title>
+  <meta name="description" content="Personal Portfolio of Tony Ko, Front End Developer.">
+  <meta name="author" content="Tony Ko">
+  <!-- seo -->
+  <meta name="description" content="JournalA journal of my learning progress and solutions in the LUA language.
+Self LearningI am currently using github’s version tracking as a way to track my progress through Programming in Lua: First">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="LUA Language">
+    <meta property="og:url" content="https://www.tko.dev/code/personal/lua-language/index/index.html">
+    <meta property="og:site_name" content="Tony Ko">
+    <meta property="og:description" content="JournalA journal of my learning progress and solutions in the LUA language.
+Self LearningI am currently using github’s version tracking as a way to track my progress through Programming in Lua: First">
+      <meta property="og:image" content="https://www.tko.dev/cover.jpg">
+      <meta property="og:updated_time" content="2017-02-26T07:06:28.000Z">
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="LUA Language">
+      <meta name="twitter:description" content="JournalA journal of my learning progress and solutions in the LUA language.
+Self LearningI am currently using github’s version tracking as a way to track my progress through Programming in Lua: First">
+        <meta name="twitter:image" content="https://www.tko.dev/cover.jpg">
+        <meta name="twitter:creator" content="@325691563">
+        <link rel="publisher" href="115030973515103450000">
+        <meta property="fb:admins" content="399702780083314">
+        <meta property="fb:app_id" content="686326168159515">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/lib/framework/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/lib/framework/img/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/lib/framework/img/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/lib/framework/img/favicon/manifest.json">
+        <link rel="mask-icon" href="/lib/framework/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/lib/framework/img/favicon/favicon.ico">
+        <meta name="msapplication-config" content="/lib/framework/img/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- external -->
+        <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+        <!-- css -->
+        <link rel="stylesheet" href="/lib/font-awesome-4.7.0/css/font-awesome-4.7.0.min.css">
+        <link rel="stylesheet" href="/lib/blueimp-gallery-2.22.0/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="/lib/framework/css/index.css">
+        <!-- js -->
+        <script src="/lib/jquery-3.1.1/js/jquery.min.js"></script>
+        <script src="/lib/blueimp-gallery-2.22.0/js/blueimp-gallery.min.js"></script>
+        <script src="/lib/framework/js/index.js"></script>
+</head>
+
+<body>
+  <header id="header" class="b-section">
+    <div class="b-container">
+      <section class="b-columns">
+        <nav id="menu" class="b-column b-is-12" role="menu">
+          <div class="b-columns b-is-mobile">
+            <div class="h-logo b-column b-is-3-mobile b-is-1-tablet">
+              <a href="/"><img src="/lib/framework/img/logo/logo.svg" alt="Tony Ko's Portfolio Logo"></a>
+            </div>
+            <div class="h-name b-column b-is-6-mobile b-is-5-tablet"> <a href="/" role="menuitem">Tony Ko</a>
+              <p>Front End Developer * Designer</p>
+            </div>
+            <div class="h-menu b-column b-is-2-mobile b-is-3-tablet">
+              <a href="/code.html" role="menuitem"> <i class="fa fa-code" aria-hidden="true"></i> &nbsp; <span class="b-is-hidden-mobile">Code</span> </a>
+              <a href="/gfx.html" role="menuitem"> <i class="fa fa-paint-brush" aria-hidden="true"></i> &nbsp; <span class="b-is-hidden-mobile">GFX</span> </a>
+              <a href="/interior-design.html" role="menuitem"> <i class="fa fa-university" aria-hidden="true"></i> &nbsp; <span class="b-is-hidden-mobile">Interior Design</span> </a>
+            </div>
+            <div class="h-links b-column b-is-1-mobile b-is-3-tablet">
+              <a href="/about.html" target="_self" role="menuitem"> <span class="b-is-hidden-mobile">About Me</span> &nbsp; <i class="fa fa-id-card-o" aria-hidden="true"></i> </a>
+              <a href="https://github.com/htkoca/" target="_blank" role="menuitem"> <span class="b-is-hidden-mobile">GitHub</span> &nbsp; <i class="fa fa-code-fork" aria-hidden="true"></i> </a>
+              <a href="https://linkedin.com/in/tkodev/" target="_blank" role="menuitem"> <span class="b-is-hidden-mobile">LinkedIn</span> &nbsp; <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </div>
+  </header>
+  <main id="main" class="b-section">
+    <div class="b-container">
+      <section class="b-columns b-is-multiline">
+        <header id="hero" class="b-column b-is-12">
+          <div class="h-bg b-columns b-is-gapless b-is-mobile" style="background-image: url('/code/personal/lua-language/index/cover.jpg');">
+            <div class="b-column b-is-1"></div>
+            <div class="h-content b-column b-is-10">
+              <h1>LUA Language</h1>
+              <p> <time>November 26th 2016</time> </p>
+              <p> <a class="b-button b-is-medium" href="https://github.com/htkoca/lua-language" target="_blank"><i class="fa fa-code-fork" aria-hidden="true"></i> Code</a> </p>
+              <p> <span class="b-tag">lua</span> </p>
+            </div>
+            <div class="b-column b-is-1"></div>
+          </div>
+        </header>
+        <article id="post" class="b-column b-is-12">
+          <div class="b-columns b-is-mobile">
+            <div class="b-column b-is-1"></div>
+            <div class="h-content b-content b-column b-is-10">
+              <h1 id="Journal">
+                <a href="#Journal" class="headerlink" title="Journal"></a>Journal</h1>
+              <p>A journal of my learning progress and solutions in the LUA language.</p>
+              <h2 id="Self-Learning">
+                <a href="#Self-Learning" class="headerlink" title="Self Learning"></a>Self Learning</h2>
+              <p>I am currently using github’s version tracking as a way to track my progress through <a href="http://www.lua.org/pil/contents.html" target="_blank" rel="external">Programming in Lua: First Edition</a> as my guide to learning LUA. Version
+                tracking allows me to show to myself and other the actual progress of my work including revisions to my code. I chose the first edition because it is constant, readily available, and most importantly, free for all to enjoy. I intend this
+                repository to be a learning reference for myself and others.</p>
+              <h2 id="Attribution">
+                <a href="#Attribution" class="headerlink" title="Attribution"></a>Attribution</h2>
+              <ul>
+                <li>Code samples examples are derived and/or paraphrased in my own language from <a href="http://www.lua.org/pil/contents.html" target="_blank" rel="external">Programming in Lua: First Edition</a>.</li>
+              </ul>
+              <h2 id="Table-Of-Contents">
+                <a href="#Table-Of-Contents" class="headerlink" title="Table Of Contents."></a>Table Of Contents.</h2>
+              <p>Course <code>Parts</code> are organized as folders, with <code>Chapters</code> in individual markdown <code>.md</code> files within for easy reading.</p>
+              <h3 id="Part-1-The-Language">
+                <a href="#Part-1-The-Language" class="headerlink" title="Part 1 - The Language"></a>Part 1 - The Language</h3>
+              <details>
+                <summary>01 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/01%20-%20Getting%20Started.md" target="_blank" rel="external">Complete</a> - Getting Started</summary><br>
+                <ul>
+                  <li>1.1 - Chunks</li>
+                  <li>1.2 - Global Variables</li>
+                  <li>1.3 - Some Lexical Conventions</li>
+                  <li>1.4 - The Stand-Alone Interpreter</li>
+                </ul><br></details>
+              <details>
+                <summary>02 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/02%20-%20Types%20and%20Values.md" target="_blank" rel="external">Complete</a> - Types and Values</summary><br>
+                <ul>
+                  <li>2.1 - Nil</li>
+                  <li>2.2 - Booleans</li>
+                  <li>2.3 - Numbers</li>
+                  <li>2.4 - Strings</li>
+                  <li>2.5 - Tables</li>
+                  <li>2.6 - Functions</li>
+                  <li>2.7 - Userdata and Threads</li>
+                </ul><br></details>
+              <details>
+                <summary>03 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/03%20-%20Expressions.md" target="_blank" rel="external">Complete</a> - Expressions</summary><br>
+                <ul>
+                  <li>3.1 - Arithmetic Operators</li>
+                  <li>3.2 - Relational Operators</li>
+                  <li>3.3 - Logical Operators</li>
+                  <li>3.4 - Concatenation</li>
+                  <li>3.5 - Precedence</li>
+                  <li>3.6 - Table Constructors</li>
+                </ul><br></details>
+              <details>
+                <summary>04 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/04%20-%20Statements.md" target="_blank" rel="external">Complete</a> - Statements</summary><br>
+                <ul>
+                  <li>4.1 - Assignment</li>
+                  <li>4.2 - Local Variables and Blocks</li>
+                  <li>4.3 - Control Structures</li>
+                  <li>4.3.1 - if then else</li>
+                  <li>4.3.2 - while</li>
+                  <li>4.3.3 - repeat</li>
+                  <li>4.3.4 - Numeric for</li>
+                  <li>4.3.5 - Generic for</li>
+                  <li>4.4 - break and return</li>
+                </ul><br></details>
+              <details>
+                <summary>05 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/05%20-%20Functions.md" target="_blank" rel="external">Complete</a> - Functions</summary><br>
+                <ul>
+                  <li>5.1 - Multiple Results</li>
+                  <li>5.2 - Variable Number of Arguments</li>
+                  <li>5.3 - Named Arguments</li>
+                </ul><br></details>
+              <details>
+                <summary>06 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/06%20-%20More%20about%20Functions.md" target="_blank" rel="external">Complete</a> - More about Functions</summary><br>
+                <ul>
+                  <li>6.1 - Closures</li>
+                  <li>6.2 - Non-Global Functions</li>
+                  <li>6.3 - Proper Tail Calls</li>
+                </ul><br></details>
+              <details>
+                <summary>07 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/07%20-%20Iterators%20and%20the%20Generic%20For.md" target="_blank" rel="external">Complete</a> - Iterators and the Generic <code>for</code></summary><br>
+                <ul>
+                  <li>7.1 - Iterators and Closures</li>
+                  <li>7.2 - The Semantics of the Generic for</li>
+                  <li>7.3 - Stateless Iterators</li>
+                  <li>7.4 - Iterators with Complex State</li>
+                  <li>7.5 - True Iterators</li>
+                </ul><br></details>
+              <details>
+                <summary>08 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/08%20-%20Compilation%2C%20Execution%2C%20and%20Errors.md" target="_blank" rel="external">Complete</a> - Compilation, Execution, and Errors</summary><br>
+                <ul>
+                  <li>8.1 - The require Function</li>
+                  <li>8.2 - C Packages</li>
+                  <li>8.3 - Errors</li>
+                  <li>8.4 - Error Handling and Exceptions</li>
+                  <li>8.5 - Error Messages and Tracebacks</li>
+                </ul><br></details>
+              <details>
+                <summary>09 - <a href="https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/09%20-%20Coroutines.md" target="_blank" rel="external">Complete</a> - Coroutines</summary><br>
+                <ul>
+                  <li>9.1 - Coroutine Basics</li>
+                  <li>9.2 - Pipes and Filters</li>
+                  <li>9.3 - Coroutines as Iterators</li>
+                  <li>9.4 - Non-Preemptive Multithreading</li>
+                </ul><br></details>
+              <details>
+                <summary>10 - <a href="#">None</a> - Complete Examples</summary><br>
+                <ul>
+                  <li>10.1 - Data Description</li>
+                  <li>10.2 - Markov Chain Algorithm</li><br> </ul>
+              </details>
+              <h3 id="Part-2-Tables-and-Objects">
+                <a href="#Part-2-Tables-and-Objects" class="headerlink" title="Part 2 - Tables and Objects"></a>Part 2 - Tables and Objects</h3>
+              <details>
+                <summary>11 - <a href="#">None</a> - Data Structures</summary><br>
+                <ul>
+                  <li>11.1 - Arrays</li>
+                  <li>11.2 - Matrices and Multi-Dimensional Arrays</li>
+                  <li>11.3 - Linked Lists</li>
+                  <li>11.4 - Queues and Double Queues</li>
+                  <li>11.5 - Sets and Bags</li>
+                  <li>11.6 - String Buffers</li>
+                </ul><br></details>
+              <details>
+                <summary>12 - <a href="#">None</a> - Data Files and Persistence</summary><br>
+                <ul>
+                  <li>12.1 - Serialization</li>
+                  <li>12.1.1 - Saving Tables without Cycles</li>
+                  <li>12.1.2 - Saving Tables with Cycles</li>
+                </ul><br></details>
+              <details>
+                <summary>13 - <a href="#">None</a> - Metatables and Metamethods</summary><br>
+                <ul>
+                  <li>13.1 - Arithmetic Metamethods</li>
+                  <li>13.2 - Relational Metamethods</li>
+                  <li>13.3 - Library-Defined Metamethods</li>
+                  <li>13.4 - Table-Access Metamethods</li>
+                  <li>13.4.1 - The <code>__index</code> Metamethod</li>
+                  <li>13.4.2 - The <code>__newindex</code> Metamethod</li>
+                  <li>13.4.3 - Tables with Default Values</li>
+                  <li>13.4.4 - Tracking Table Accesses</li>
+                  <li>13.4.5 - Read-Only Tables</li>
+                </ul><br></details>
+              <details>
+                <summary>14 - <a href="#">None</a> - The Environment</summary><br>
+                <ul>
+                  <li>14.1 - Accessing Global Variables with Dynamic Names</li>
+                  <li>14.2 - Declaring Global Variables</li>
+                  <li>14.3 - Non-Global Environments</li>
+                </ul><br></details>
+              <details>
+                <summary>15 - <a href="#">None</a> - Packages</summary><br>
+                <ul>
+                  <li>15.1 - The Basic Approach</li>
+                  <li>15.2 - Privacy</li>
+                  <li>15.3 - Packages and Files</li>
+                  <li>15.4 - Using the Global Table</li>
+                  <li>15.5 - Other Facilities</li>
+                </ul><br></details>
+              <details>
+                <summary>16 - <a href="#">None</a> - Object-Oriented Programming</summary><br>
+                <ul>
+                  <li>16.1 - Classes</li>
+                  <li>16.2 - Inheritance</li>
+                  <li>16.3 - Multiple Inheritance</li>
+                  <li>16.4 - Privacy</li>
+                  <li>16.5 - The Single-Method Approach</li>
+                </ul><br></details>
+              <details>
+                <summary>17 - <a href="#">None</a> - Weak Tables</summary><br>
+                <ul>
+                  <li>17.1 - Memoize Functions</li>
+                  <li>17.2 - Object Attributes</li>
+                  <li>17.3 - Revisiting Tables with Default Values</li><br> </ul>
+              </details>
+              <h3 id="Part-3-The-Standard-Libraries">
+                <a href="#Part-3-The-Standard-Libraries" class="headerlink" title="Part 3 - The Standard Libraries"></a>Part 3 - The Standard Libraries</h3>
+              <details>
+                <summary>18 - <a href="#">None</a> - The Mathematical Library</summary><br>
+                <ul>
+                  <li>18 - The Mathematical Library</li>
+                </ul><br></details>
+              <details>
+                <summary>19 - <a href="#">None</a> - The Table Library</summary><br>
+                <ul>
+                  <li>19.1 - Array Size</li>
+                  <li>19.2 - Insert and Remove</li>
+                  <li>19.3 - Sort</li>
+                </ul><br></details>
+              <details>
+                <summary>20 - <a href="#">None</a> - The String Library</summary><br>
+                <ul>
+                  <li>20.1 - Pattern-Matching Functions</li>
+                  <li>20.2 - Patterns</li>
+                  <li>20.3 - Captures</li>
+                  <li>20.4 - Tricks of the Trade</li>
+                </ul><br></details>
+              <details>
+                <summary>21 - <a href="#">None</a> - The I/O Library</summary><br>
+                <ul>
+                  <li>21.1 - The Simple I/O Model</li>
+                  <li>21.2 - The Complete I/O Model</li>
+                  <li>21.2.1 - A Small Performance Trick</li>
+                  <li>21.2.2 - Binary Files</li>
+                  <li>21.3 - Other Operations on Files</li>
+                </ul><br></details>
+              <details>
+                <summary>22 - <a href="#">None</a> - The Operating System Library</summary><br>
+                <ul>
+                  <li>22.1 - Date and Time</li>
+                  <li>22.2 - Other System Calls</li>
+                </ul><br></details>
+              <details>
+                <summary>23 - <a href="#">None</a> - The Debug Library</summary><br>
+                <ul>
+                  <li>23.1 - Introspective Facilities</li>
+                  <li>23.1.1 - Accessing Local Variables</li>
+                  <li>23.1.2 - Accessing Upvalues</li>
+                  <li>23.2 - Hooks</li>
+                  <li>23.3 - Profiles</li><br> </ul>
+              </details>
+              <h3 id="Part-4-The-C-API">
+                <a href="#Part-4-The-C-API" class="headerlink" title="Part 4 - The C API"></a>Part 4 - The C API</h3>
+              <details>
+                <summary>24 - <a href="#">None</a> - An Overview of the C API</summary><br>
+                <ul>
+                  <li>24.1 - A First Example</li>
+                  <li>24.2 - The Stack</li>
+                  <li>24.2.1 - Pushing Elements</li>
+                  <li>24.2.2 - Querying Elements</li>
+                  <li>24.2.3 - Other Stack Operations</li>
+                  <li>24.3 - Error Handling with the C API</li>
+                  <li>24.3.1 - Error Handling in Application Code</li>
+                  <li>24.3.2 - Error Handling in Library Code</li>
+                </ul><br></details>
+              <details>
+                <summary>25 - <a href="#">None</a> - Extending your Application</summary><br>
+                <ul>
+                  <li>25.1 - Table Manipulation</li>
+                  <li>25.2 - Calling Lua Functions</li>
+                  <li>25.3 - A Generic Call Function</li>
+                </ul><br></details>
+              <details>
+                <summary>26 - <a href="#">None</a> - Calling C from Lua</summary><br>
+                <ul>
+                  <li>26.1 - C Functions</li>
+                  <li>26.2 - C Libraries</li>
+                </ul><br></details>
+              <details>
+                <summary>27 - <a href="#">None</a> - Techniques for Writing C Functions</summary><br>
+                <ul>
+                  <li>27.1 - Array Manipulation</li>
+                  <li>27.2 - String Manipulation</li>
+                  <li>27.3 - Storing State in C Functions</li>
+                  <li>27.3.1 - The Registry</li>
+                  <li>27.3.2 - References</li>
+                  <li>27.3.3 - Upvalues</li>
+                </ul><br></details>
+              <details>
+                <summary>28 - <a href="#">None</a> - User-Defined Types in C</summary><br>
+                <ul>
+                  <li>28.1 - Userdata</li>
+                  <li>28.2 - Metatables</li>
+                  <li>28.3 - Object-Oriented Access</li>
+                  <li>28.4 - Array Access</li>
+                  <li>28.5 - Light Userdata</li>
+                </ul><br></details>
+              <details>
+                <summary>29 - <a href="#">None</a> - Managing Resources</summary><br>
+                <ul>
+                  <li>29.1 - A Directory Iterator</li>
+                  <li>29.2 - An XML Parser</li><br> </ul>
+              </details>
+            </div>
+            <div class="b-column b-is-1"></div>
+          </div>
+        </article>
+        <footer id="gallery" class="b-column ">
+          <div class="b-columns b-is-multiline">
+            <div class="b-column b-is-12">
+              <div class="h-bg" style="background-image: url('/code/personal/lua-language/index/cover.jpg');">
+                <div class="h-content"> <a href="/code/personal/lua-language/index/cover.jpg"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </main>
+  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3> <a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+  <script>
+    document.getElementById('gallery').onclick = function(event) {
+      event = event || window.event;
+      var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {
+          index: link,
+          event: event
+        },
+        links = this.getElementsByTagName('a');
+      blueimp.Gallery(links, options);
+    };
+  </script>
+  <footer id="footer" class="b-section">
+    <div class="b-container">
+      <section class="b-columns">
+        <nav id="menu" class="b-column b-is-12" role="menu">
+          <div class="b-columns b-is-mobile">
+            <div class="h-logo b-column b-is-3-mobile b-is-1-tablet"> <img src="/lib/framework/img/logo/copyright.svg" alt="Copyright Logo"> </div>
+            <div class="h-name b-column b-is-6-mobile b-is-5-tablet">
+              <p>Copyright 2017 - Tony Ko</p>
+            </div>
+            <div class="h-menu b-column b-is-2-mobile b-is-3-tablet">
+              <a href="https://twitter.com/htko89" target="_blank" role="menuitem"> <i class="fa fa-twitter" aria-hidden="true"></i> &nbsp; <span class="b-is-hidden-mobile">Follow @tkodev_</span> </a>
+            </div>
+            <div class="h-links b-column b-is-1-mobile b-is-3-tablet">
+              <a id="top" href="#" role="menuitem"> <i class="fa fa-chevron-up" aria-hidden="true"></i> &nbsp; </a>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>

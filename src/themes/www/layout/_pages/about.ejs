@@ -1,0 +1,91 @@
+<main id="main" class="b-section">
+  <div class="b-container">
+    <section class="b-columns b-is-multiline">
+
+      <header id="hero" class="b-column b-is-12">
+        <% var cover = ( page.images ? page.images[0] : page.cover ) %>
+        <div class="h-bg b-columns b-is-gapless b-is-mobile" style="background-image: url('<%- url_for( page.cover ) %>');">
+          <div class="b-column b-is-1"></div>
+          <div class="h-content b-column b-is-10">
+            <h1><%- page.title %></h1>
+            <p>
+              <a class="b-button b-is-medium" href="<%= theme.links.github.link %>" target="_blank"><i class="fa <%= theme.links.github.icon %>" aria-hidden="true"></i> <%= theme.links.github.title %></a>
+              <a class="b-button b-is-medium" href="<%= theme.links.linkedin.link %>" target="_blank"><i class="fa <%= theme.links.linkedin.icon %>" aria-hidden="true"></i> <%= theme.links.linkedin.title %></a>
+              <a class="b-button b-is-medium" href="https://docs.google.com/viewerng/viewer?url=https://www.tko.dev/resume.pdf" target="_blank"><i class="fa <%= theme.links.about.icon %>" aria-hidden="true"></i> Resume</a>
+            </p>
+            <h5 class="h-subtitle">Front-End:</h5>
+            <p>
+              <span class="b-tag">HTML & CSS</span>
+              <span class="b-tag">Javascript</span>
+              <span class="b-tag">jQuery</span>
+              <span class="b-tag">Gulp.js</span>
+              <span class="b-tag">SASS & SCSS</span>
+            </p>
+            <h5 class="h-subtitle">Back-End:</h5>
+            <p>
+              <span class="b-tag">Node.js</span>
+              <span class="b-tag">Hugo / Hexo</span>
+              <span class="b-tag">Docker</span>
+              <span class="b-tag">Express.js</span>
+              <span class="b-tag">Python</span>
+            </p>
+            <h5 class="h-subtitle">Contact:</h5>
+            <p>C: +1-647-300-9787</p>
+            <p>E: <%- mail_to('tony@tko.dev', 'tony@tko.dev', {subject: 'tko.dev: '}) %></p>
+          </div>
+          <div class="b-column b-is-1"></div>
+        </div>
+      </header>
+
+      <article id="post" class="b-column b-is-12">
+        <div class="b-columns b-is-mobile">
+          <div class="b-column b-is-1"></div>
+          <div class="h-content b-content b-column b-is-10">
+            <%- page.content %>
+          </div>
+          <div class="b-column b-is-1"></div>
+        </div>
+      </article>
+
+      <footer id="gallery" class="b-column ">
+        <div class="b-columns b-is-multiline">
+          <div class="b-column b-is-6">
+            <div class="h-bg" style="background-image: url('<%- url_for( page.cover ) %>');">
+              <div class="h-content">
+                <a href="<%- url_for( page.cover ) %>"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="b-column b-is-6">
+            <div class="h-bg" style="background-image: url('<%- url_for( page.image ) %>');">
+              <div class="h-content">
+                <a href="<%- url_for( page.image) %>"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </section>
+  </div>
+</main>
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+  <div class="slides"></div>
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+</div>
+<script>
+  document.getElementById('gallery').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+      link = target.src ? target.parentNode : target,
+      options = {index: link, event: event},
+      links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+  };
+</script>

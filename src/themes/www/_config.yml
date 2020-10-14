@@ -1,0 +1,33 @@
+# Header
+menu:
+  code:
+    title: Code
+    link: code.html
+    icon: fa-code
+  gfx:
+    title: GFX
+    link: gfx.html
+    icon: fa-paint-brush
+  interior-design:
+    title: Interior Design
+    link: interior-design.html
+    icon: fa-university
+links:
+  about:
+    title: About Me
+    link: about.html
+    icon: fa-id-card-o
+  github:
+    title: GitHub
+    link: https://github.com/htkoca/
+    icon: fa-code-fork
+  linkedin:
+    title: LinkedIn
+    link: https://linkedin.com/in/tkodev/
+    icon: fa-linkedin
+
+# Miscellaneous
+twitter_id: 325691563
+google_plus: 115030973515103456616
+fb_admins: 399702780083314
+fb_app_id: 686326168159515
